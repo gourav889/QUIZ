@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="Quizzes.css">
+</head>
+<body>
+    <script src="question1.js"></script>
+    <script src="script1.js"></script>
+    <div class="background">
+        <p class="inter">Quizzes</p>
+        <div class="interface">
+            <p class="signup">SIGN UP</p>
+            <ul id="navlist">
+                <li id="home"><img src="home color.png" alt="" id="demo1"></li>
+                <li id="trophy"><img src="trophy color.png" alt="" id="demo2"></li>
+            </ul>   
+          <div class="container">
+             <div id="page1">
+                 <div class="top">
+                      <p class="welcome">Welcome To The Quizzes</p>
+                      <img src="login-.png" alt="" srcset="" id="login">
+                      <p class="w">Are you prepared to show your skills in this champion quiz?</p>
+                  </div>
+                 <div id="content">
+                      <p id="username">Username </p><input type="text" name="" id="inputuser" placeholder="Your Name">
+                      <br>
+                      <p id="Subject">Subject</p> 
+                     <select id="inputsubject">
+                         <option value="Subject">--Select Subject--</option>
+                         <option value="C"> C Language</option>
+                         <option value="React"> React</option>
+                         <option value="Javascript">Javascript</option>
+                         <option value="Python"> Python</option>
+                     </select>
+                     <p class="checkbox"><input type="checkbox" name="checkbox" id="">Stay Signin</p>
+                     <button onclick="startQuiz(), change('home') , change('trophy')" id="button">Start Quiz</button>
+                   </div>
+              </div>
+
+              <div id="quiz" style="display:none;">
+                   <p class="heading1">Question</p>
+                   <div id="question"></div>
+                   <div id="options"></div>
+                   <button onclick="nextQuestion()" id="button">Next Question</button>
+             </div>
+
+              <div id="Result"  style="display:none;" >
+                 <p class="heading2">Result</p>
+                 <div id="result">
+                     <h2 id="score"></h2>
+                     <button onclick="restartQuiz ()" id="button">Restart Quiz</button>
+                 </div>
+              </div>
+          </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
